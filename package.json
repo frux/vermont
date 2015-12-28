@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
-    "coveralls": "./node_modules/.bin/istanbul-coveralls"
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha",
+    "coveralls": "istanbul-coveralls"
   },
-  "bin": "./bin/vermont",
+  "bin": {
+    "vermont": "./bin/vermont"
+  },
   "keywords": [
     "monitor"
   ],
@@ -25,5 +27,16 @@
     "got": "^5.3.0",
     "minimist": "^1.2.0",
     "seenk": "^0.2.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frux/vermont.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frux/vermont/issues"
+  },
+  "homepage": "https://github.com/frux/vermont#readme"
 }
