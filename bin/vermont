@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+'use strict';
+
+const vermont = require('../');
+const argv = require('minimist')(process.argv.slice(2));
+const configPath = argv.f || argv.file;
+const sync = !!argv.s || !!argv.sync;
+const helpText = `Vermont serVER MONiTor tool
+Usage: vermont [OPTIONS] -f <CONFIG_FILE>
+  -f, --file  Config file
+  -s, --sync  Run checks synchronously
+  -h, --help  This help`;
+
+if(argv.h || argv.help){
+	console.log(helpText);
+	process.exit(0);
+}
+
+if(configPath){
+	vermont.runConfig(configPath, sync);
+}else{
+	console.error(helpText);
+}
