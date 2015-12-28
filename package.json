@@ -4,14 +4,26 @@
   "description": "serVER MONiTor",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "coveralls": "./node_modules/.bin/istanbul-coveralls"
   },
+  "bin": "./bin/vermont",
   "keywords": [
     "monitor"
   ],
   "author": "frux",
   "license": "WTFPL",
   "devDependencies": {
+    "gerkon": "^1.1.1",
+    "istanbul": "^0.4.1",
+    "istanbul-coveralls": "^1.0.3",
     "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "got": "^5.3.0",
+    "minimist": "^1.2.0",
+    "seenk": "^0.2.1"
   }
 }

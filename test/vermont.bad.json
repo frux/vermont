@@ -1,16 +1,13 @@
 [
   {
-    "name": "test-1",
     "ping": "http://localhost:3163/ping/test1",
     "expected": 200
   },
   {
-    "name": "test-2",
     "ping": "http://localhost:3163/ping/test2",
-    "expected": 500
+    "expected": 200
   },
   {
-    "name": "test-3",
     "ping": "http://localhost:3163/ping/test3",
     "expected": 200
   }
