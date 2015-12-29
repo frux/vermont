@@ -76,15 +76,18 @@ Vermont config file contains checks. So far Vermont can only check different url
 [
   {
     "name": "test-1",
-    "ping": "https://yandex.ru"
+    "ping": "https://yandex.ru",
+    "expected": 200
   },
   {
     "name": "test-2",
-    "ping": "https://google.com"
+    "ping": "https://google.com",
+    "expected": 200
   },
   {
     "name": "test-3",
-    "ping": "https://facebook.com"
+    "ping": "https://facebook.com",
+    "expected": 200
   }
 ]
 ```
