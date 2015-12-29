@@ -11,8 +11,7 @@ const actions = {
 };
 
 function runConfig(configPath, sync){
-	let checks,
-		config;
+	let config;
 
 	if(!path.isAbsolute(configPath)){
 		configPath = path.resolve(process.cwd(), configPath);
