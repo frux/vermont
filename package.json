@@ -20,13 +20,14 @@
     "gerkon": "^1.1.1",
     "istanbul": "^0.4.1",
     "istanbul-coveralls": "^1.0.3",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
   },
   "dependencies": {
     "chalk": "^1.1.1",
     "got": "^5.3.0",
     "minimist": "^1.2.0",
-    "seenk": "^0.2.1"
+    "seenk": "^0.2.2"
   },
   "directories": {
     "test": "test"

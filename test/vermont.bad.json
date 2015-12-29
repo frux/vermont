@@ -1,14 +1,17 @@
 [
   {
-    "ping": "http://localhost:3163/ping/test1",
+    "name": "ok-test-1",
+    "ping": "http://localhost:3163/200",
     "expected": 200
   },
   {
-    "ping": "http://localhost:3163/ping/test2",
+    "name": "bad-test-2",
+    "ping": "http://localhost:3163/502",
     "expected": 200
   },
   {
-    "ping": "http://localhost:3163/ping/test3",
+    "name": "ok-test-3",
+    "ping": "http://localhost:3163/pong",
     "expected": 200
   }
 ]

@@ -1,17 +1,22 @@
 [
   {
     "name": "test-1",
-    "ping": "http://localhost:3163/ping/test1",
+    "ping": "http://localhost:3163/200",
     "expected": 200
   },
   {
     "name": "test-2",
-    "ping": "http://localhost:3163/ping/test2",
-    "expected": 500
+    "ping": "http://localhost:3163/502",
+    "expected": 502
   },
   {
     "name": "test-3",
-    "ping": "http://localhost:3163/ping/test3",
-    "expected": 200
+    "ping": "http://localhost:3163/pong",
+    "expected": "pong"
+  },
+  {
+    "name": "command-1",
+    "exec": "echo 2+2",
+    "expected": "\\d"
   }
 ]
