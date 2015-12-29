@@ -7,7 +7,7 @@ Ser**ver** **mon**i**t**oring tool
 Vermont allow you to check your server's state. It can ping urls and exec shell commands.
 
 ## Usage
-Vermont available to use right in [JS code](#usage) and as a [CLI application](#cli). The both checks (ping and exec) require parameter `expected` to be specified. It may be a number or a string. Vermont compares different values in order to `expected` type.
+Vermont available to use right in [JS code](#js-code) and as a [CLI application](#cli). The both checks (ping and exec) require parameter `expected` to be specified. It may be a number or a string. Vermont compares different values in order to `expected` type.
 
 |expected|ping                  |exec          |
 |--------|----------------------|--------------|
