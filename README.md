@@ -7,7 +7,7 @@ Ser**ver** **mon**i**t**oring tool
 Vermont allow you to check your server's state. It can ping urls and exec shell commands.
 
 ## Usage
-Vermont available to use right in JS code and as a CLI application. The both checks (ping and exec) require parameter `expected` to be specified. It may be a number or a string. Vermont compares different values in order to `expected` type.
+Vermont available to use right in [JS code](#usage) and as a [CLI application](#cli). The both checks (ping and exec) require parameter `expected` to be specified. It may be a number or a string. Vermont compares different values in order to `expected` type.
 
 |expected|ping                  |exec          |
 |--------|----------------------|--------------|
@@ -19,39 +19,6 @@ For example: if you need to check that url answers 200 status code you should se
 **NOTE**: If type of `expected` is a string it will be used as a **regular expression**.
 
 **NOTE**: If `expected` parameter is not specified Vermont will use `200` for `ping` or `0` for `exec` as default.
-
-## CLI
-### Install
-`npm i -g vermont`
-
-### Usage
-```vermont [OPTIONS] -f <CONFIG_FILE>```
-
-### Available options
-```
-  -f, --file  Path to the config file
-  -s, --sync  Run checks synchronously
-  -h, --help  Show help
-```
-
-### Config file
-Vermont config file contains checks. So far Vermont can only check different urls. Here is the example of config that checks some urls:
-```json
-[
-  {
-    "name": "test-1",
-    "ping": "https://yandex.ru"
-  },
-  {
-    "name": "test-2",
-    "ping": "https://google.com"
-  },
-  {
-    "name": "test-3",
-    "ping": "https://facebook.com"
-  }
-]
-```
 
 ## JS code
 ### Install
@@ -87,4 +54,37 @@ For exec method:
   received: 4,
   status: 'error'
 }
+```
+
+## CLI
+### Install
+`npm i -g vermont`
+
+### Usage
+```vermont [OPTIONS] -f <CONFIG_FILE>```
+
+### Available options
+```
+  -f, --file  Path to the config file
+  -s, --sync  Run checks synchronously
+  -h, --help  Show help
+```
+
+### Config file
+Vermont config file contains checks. So far Vermont can only check different urls. Here is the example of config that checks some urls:
+```json
+[
+  {
+    "name": "test-1",
+    "ping": "https://yandex.ru"
+  },
+  {
+    "name": "test-2",
+    "ping": "https://google.com"
+  },
+  {
+    "name": "test-3",
+    "ping": "https://facebook.com"
+  }
+]
 ```
